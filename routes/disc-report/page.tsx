@@ -19,8 +19,9 @@ export default async function DiscReportPage({ params }: { params: Promise<{ rep
 
   // Login só entra na hora de salvar/ver o resultado (fluxo simplificado pedido) — se a sessão já
   // existe e o relatório ainda está órfão, reivindica pra essa conta antes de renderizar.
-  const currentUser = await getCurrentUser();
-  if (currentUser.success && currentUser.data && !report.isClaimed) {
+  const currentUserResult = await getCurrentUser();
+  const currentUser = currentUserResult.success ? currentUserResult.data : null;
+  if (currentUser && !report.isClaimed) {
     const claimed = await claimDiscReport({ reportId });
     if (claimed.success) {
       report = { ...report, isClaimed: true };
@@ -39,7 +40,7 @@ export default async function DiscReportPage({ params }: { params: Promise<{ rep
         <DiscReportPrintButton />
       </div>
 
-      {!report.isClaimed && !currentUser.data && (
+      {!report.isClaimed && !currentUser && (
         <div className="flex flex-wrap items-center justify-between gap-3 rounded-panel border border-warning-border bg-warning-soft p-4 text-sm print:hidden">
           <span>Faça login para salvar este resultado na sua conta — sem isso, só quem tem este link consegue vê-lo.</span>
           <Button asChild size="sm">
