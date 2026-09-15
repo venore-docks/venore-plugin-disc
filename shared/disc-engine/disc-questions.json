@@ -1,0 +1,201 @@
+{
+  "assessment": "Disc",
+  "description": "Descrição do teste disc",
+  "howto": {
+    "title": "Precisa de ajuda?",
+    "content": "<div> O DISC é uma ferramenta que mede comportamentos e emoções observáveis em diferentes situações. Suas aplicações variam desde seleção de pessoal até melhoria da comunicação e análise de equipes, visando melhorar a compreensão e interação entre indivíduos em contextos pessoais e profissionais. </div> <div> O questionário DISC possui 20 questões, cada uma com 5 frases. Em cada questão, é necessário marcar o comportamento <span class=\"text-primary\">mais provável</span> e o <span class=\"text-destructive\">menos provável</span>, conforme o ambiente selecionado. Este método ajuda a identificar padrões de comportamento e estilos de comunicação em diferentes contextos. </div>"
+  },
+  "values": {
+    "d": "Dominância",
+    "i": "Influência",
+    "s": "Estabilidade",
+    "c": "Conformidade",
+    "n": "Neutro"
+  },
+  "questions": [
+    {
+      "header": "Version 31.07.24.1",
+      "options": [{ "value": "", "text": "" }]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "i", "text": "Encorajo os outros a falar abertamente." },
+        { "value": "s", "text": "Expresso e defendo minhas crenças e valores pessoais." },
+        { "value": "c", "text": "Dou valor às tarefas e aos detalhes." },
+        { "value": "n", "text": "Eu me satisfaço facilmente." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Consigo estabelecer prioridades com facilidade." },
+        { "value": "i", "text": "Fico à vontade quando sou o centro das atenções." },
+        { "value": "c", "text": "Fico longe de problemas que podem causar conflitos." },
+        { "value": "n", "text": "Eu me associo com outros." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Gosto de lidar com situações difíceis." },
+        { "value": "s", "text": "Gosto de estabelecer um ritmo de trabalho constante." },
+        { "value": "c", "text": "Busco áreas de responsabilidade nas quais possa me concentrar em trabalhar sozinho." },
+        { "value": "n", "text": "Eu sou muito criativo." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Fico confortável com trabalhos que exigem agilidade." },
+        { "value": "s", "text": "Mostro lealdade e espero o mesmo dos outros." },
+        { "value": "c", "text": "Sou perfeccionista." },
+        { "value": "n", "text": "Eu elogio as pessoas." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "i", "text": "Construo pontes para reduzir a tensão." },
+        { "value": "s", "text": "Uso o bom senso para resolver problemas." },
+        { "value": "c", "text": "Alcanço objetivos de maneira séria, calma e determinada." },
+        { "value": "n", "text": "Não me satisfaço com qualquer coisa." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "i", "text": "Fico confortável em atuar em ambientes onde não preciso cuidar dos detalhes." },
+        { "value": "s", "text": "Sou paciente." },
+        { "value": "c", "text": "Construo padrões de trabalho bem definidos." },
+        { "value": "n", "text": "Eu recebo muitos elogios." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Me sinto bem em situações competitivas." },
+        { "value": "i", "text": "Influencio os outros através de sentimentos e persuasão." },
+        { "value": "c", "text": "Prefiro tarefas que exijam habilidades analíticas e críticas para a resolução de problemas." },
+        { "value": "n", "text": "Recuo facilmente." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "i", "text": "Sou atraído por tarefas que exigem habilidades interpessoais." },
+        { "value": "s", "text": "Me aproximo de novos métodos passo a passo." },
+        { "value": "c", "text": "Gosto de analisar todos os aspectos em profundidade." },
+        { "value": "n", "text": "Quero experimentar algo." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Aceito de bom grado mudanças significativas no trabalho." },
+        { "value": "i", "text": "Tenho a tendência de agir a partir do que sinto." },
+        { "value": "c", "text": "Tenho facilidade em manter registros e em lidar com números." },
+        { "value": "n", "text": "Eu acredito no melhor dos outros." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Gosto de projetos pioneiros." },
+        { "value": "i", "text": "Gosto de entreter os demais." },
+        { "value": "s", "text": "Gosto de ter tempo suficiente para agir de modo organizado." },
+        { "value": "n", "text": "Eu aprecio coisas bonitas." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Expresso meus pontos de vista com clareza." },
+        { "value": "i", "text": "Emprego o charme e a autoconfiança." },
+        { "value": "s", "text": "Procuro ambientes onde possa cooperar com meu conhecimento especializado." },
+        { "value": "n", "text": "Eu costumo esperar que dificuldades apareçam." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Procuro ter o controle do meu destino." },
+        { "value": "i", "text": "Procuro criar uma atmosfera alegre e amigável." },
+        { "value": "c", "text": "Consigo trazer ordem ao caos." },
+        { "value": "n", "text": "Eu tenho facilidade em perdoar o que aconteceu." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Busco alcançar os objetivos com determinação." },
+        { "value": "i", "text": "Gosto de me envolver em várias atividades ao mesmo tempo." },
+        { "value": "s", "text": "Permito que a equipe resolva disputas pela liderança entre competidores vigorosos." },
+        { "value": "n", "text": "Demoro em expressar minha raiva." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Consigo visualizar novos caminhos em contextos de incerteza." },
+        { "value": "s", "text": "Obtenho o comprometimento dos outros através de maneira discreta, calma e honesta." },
+        { "value": "c", "text": "Procuro ambientes onde possa ser reconhecido pelo meu conhecimento especializado, consciência e autodisciplina." },
+        { "value": "n", "text": "Eu sou espontâneo." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Utilizo argumentos lógicos para convencer outros." },
+        { "value": "s", "text": "Espero que os outros apoiem voluntariamente uma ideia apresentada." },
+        { "value": "c", "text": "Trabalho bem quando posso elaborar planos de acordo com linhas estruturadas." },
+        { "value": "n", "text": "Eu confio nas minhas decisões." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Valorizo desafios que permitam exercer minha autonomia." },
+        { "value": "s", "text": "Encontro o meio termo entre posições extremas." },
+        { "value": "c", "text": "Entendo que os sentimentos podem nos tirar do foco." },
+        { "value": "n", "text": "Sou bastante alegre e divertido." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Utilizo linguagem enérgica, quando necessário." },
+        { "value": "i", "text": "Gosto de promover eventos empolgantes." },
+        { "value": "s", "text": "Busco o melhor caminho para a segurança a longo prazo." },
+        { "value": "n", "text": "Eu tendo a não expressar minha opinião." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Emprego declarações de especialistas e de recursos visuais para fundamentar meus argumentos." },
+        { "value": "i", "text": "Lidero indo ao encontro das necessidades dos outros." },
+        { "value": "s", "text": "Valorizo o contato com o mundo exterior, o reconhecimento e a diversidade." },
+        { "value": "n", "text": "Eu sou tímido." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "i", "text": "Me comunico com facilidade, brinco e faço promessas para convencer os outros." },
+        { "value": "s", "text": "Assumo responsabilidades voluntariamente." },
+        { "value": "c", "text": "Valorizo a ética, o conhecimento, o trabalho preciso e o reconhecimento." },
+        { "value": "n", "text": "Gosto de me vestir bem." }
+      ]
+    },
+    {
+      "header": "No ambiente {split} é {split} provável que",
+      "options": [
+        { "value": "d", "text": "Quando estou sob pressão, me torno mais produtivo." },
+        { "value": "i", "text": "Utilizo a inteligência e o charme para afastar críticas." },
+        { "value": "c", "text": "Pondero cuidadosamente as consequências antes de decidir." },
+        { "value": "n", "text": "Meus hábitos definem minhas ações." }
+      ]
+    }
+  ]
+}

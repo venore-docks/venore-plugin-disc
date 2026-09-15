@@ -1,0 +1,25 @@
+{
+  "name": "@venore/plugin-disc",
+  "version": "0.1.0",
+  "description": "Teste comportamental DISC (indivíduo ou equipe) — plugin do Venore Docks, sucessor do NestPro.",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./manifest": "./manifest.ts",
+    "./route-table": "./routes/route-table.ts",
+    "./contributions": "./contributions.ts",
+    "./database/schema": "./database/schema/index.ts",
+    "./migrations/*": "./migrations/*",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "drizzle-orm": ">=0.45",
+    "next": ">=16",
+    "react": ">=19",
+    "recharts": ">=3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10"
+  }
+}
