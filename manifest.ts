@@ -12,7 +12,7 @@ export const discManifest: PluginManifest = {
   manifestVersion: "1.0.0",
   key: "disc",
   name: "Teste DISC",
-  version: "0.1.0",
+  version: "0.1.1",
   description:
     "Teste comportamental DISC — aplicação individual ou em equipe, com relatório visual e impressão em A4. Sucessor do NestPro.",
   compatibility: { coreVersion: ">=2.0.0 <3.0.0" },
