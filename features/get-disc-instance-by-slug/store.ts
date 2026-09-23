@@ -8,6 +8,7 @@ export async function findInstanceBySlug(slug: string) {
       id: discInstances.id,
       environmentLabel: discInstances.environmentLabel,
       teamName: discTeams.name,
+      redirectUrl: discInstances.redirectUrl,
     })
     .from(discInstances)
     .leftJoin(discTeams, eq(discTeams.id, discInstances.teamId))

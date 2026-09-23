@@ -4,6 +4,7 @@ export type DiscInstanceInviteView = {
   id: string;
   environmentLabel: string;
   teamName: string | null;
+  redirectUrl: string | null;
 };
 
 export type GetDiscInstanceBySlugQuery = { slug: string };

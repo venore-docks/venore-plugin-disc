@@ -35,6 +35,8 @@ export type DiscInstanceRecord = {
   teamId: string | null;
   environmentLabel: string;
   shareSlug: string;
-  createdByUserId: string;
+  createdByUserId: string | null;
+  redirectUrl: string | null;
+  externalRef: string | null;
   createdAt: Date;
 };

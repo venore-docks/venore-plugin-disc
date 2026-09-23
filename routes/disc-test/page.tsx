@@ -16,7 +16,13 @@ export default async function DiscTestPage({
     if (!instance.success) {
       notFound();
     }
-    return <DiscTestRunner environmentLabel={instance.data.environmentLabel} instanceId={instance.data.id} />;
+    return (
+      <DiscTestRunner
+        environmentLabel={instance.data.environmentLabel}
+        instanceId={instance.data.id}
+        redirectUrl={instance.data.redirectUrl}
+      />
+    );
   }
 
   return <DiscTestRunner environmentLabel={ambiente?.trim() || "Geral"} />;

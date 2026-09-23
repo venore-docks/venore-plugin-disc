@@ -14,7 +14,17 @@ type RawInput = { more: Record<string, string>; less: Record<string, string> };
 // "menos" (wasSelected). Ordem das opções embaralha uma vez por pergunta (useMemo por índice), não
 // a cada re-render como o original — mesmo resultado visível, sem o efeito colateral de mutar o
 // array em todo render.
-export function DiscTestRunner({ environmentLabel, instanceId }: { environmentLabel: string; instanceId?: string }) {
+export function DiscTestRunner({
+  environmentLabel,
+  instanceId,
+  redirectUrl,
+}: {
+  environmentLabel: string;
+  instanceId?: string;
+  // Instância criada por outro plugin (createDiscInstanceExternal) — depois de enviar, volta pra
+  // lá em vez da página interna de relatório do disc. Ver disc-test/page.tsx.
+  redirectUrl?: string | null;
+}) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [current, setCurrent] = useState(0);
@@ -56,6 +66,10 @@ export function DiscTestRunner({ environmentLabel, instanceId }: { environmentLa
       const result = await submitDiscReportAction({ rawInput: finalInput, environmentLabel, instanceId });
       if (!result.success) {
         setError(result.error.message);
+        return;
+      }
+      if (redirectUrl) {
+        router.push(`${redirectUrl}?reportId=${result.data.id}`);
         return;
       }
       router.push(`/disc/r/${result.data.id}`);

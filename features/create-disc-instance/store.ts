@@ -20,7 +20,9 @@ const MAX_SLUG_ATTEMPTS = 5;
 export async function insertInstanceWithUniqueSlug(input: {
   teamId: string | null;
   environmentLabel: string;
-  createdByUserId: string;
+  createdByUserId: string | null;
+  redirectUrl: string | null;
+  externalRef: string | null;
 }): Promise<DiscInstanceRecord> {
   let lastError: unknown;
   for (let attempt = 0; attempt < MAX_SLUG_ATTEMPTS; attempt++) {

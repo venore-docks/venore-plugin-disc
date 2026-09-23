@@ -39,7 +39,17 @@ export const discInstances = discSchema.table("instances", {
   teamId: text("team_id").references(() => discTeams.id, { onDelete: "cascade" }),
   environmentLabel: text("environment_label").notNull().default("Geral"),
   shareSlug: text("share_slug").notNull().unique(),
-  createdByUserId: text("created_by_user_id").notNull(),
+  // Nullable — instância criada por outro plugin em nome de um fluxo anônimo (ex: candidatura em
+  // vagas) não tem ator autenticado. Instância de teamId sempre exige actorId (ver validação em
+  // create-disc-instance/service.ts), só a pessoal pode nascer sem dono.
+  createdByUserId: text("created_by_user_id"),
+  // Pra onde mandar quem respondeu o teste depois de enviar (createDiscInstanceExternal). Nulo =
+  // mantém o comportamento padrão, cai em /disc/r/:reportId.
+  redirectUrl: text("redirect_url"),
+  // Tag livre de rastreabilidade de quem criou a instância via createDiscInstanceExternal (ex:
+  // "vagas:<applicationId>") — só debug/auditoria, a ligação candidatura↔relatório é feita pelo
+  // instanceId que o plugin chamador já guarda, não por este campo.
+  externalRef: text("external_ref"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 

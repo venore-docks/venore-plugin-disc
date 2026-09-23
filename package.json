@@ -1,6 +1,6 @@
 {
   "name": "@venore/plugin-disc",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Teste comportamental DISC (indivíduo ou equipe) — plugin do Venore Docks, sucessor do NestPro.",
   "private": true,
   "type": "module",

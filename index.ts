@@ -8,8 +8,14 @@ export { createDiscTeamHandler as createDiscTeam } from "./features/create-disc-
 export { getDiscTeamHandler as getDiscTeam } from "./features/get-disc-team/handler";
 export { listMyDiscTeamsHandler as listMyDiscTeams } from "./features/list-my-disc-teams/handler";
 export { createDiscInstanceHandler as createDiscInstance } from "./features/create-disc-instance/handler";
+// Sem gate de sessão — pra outro plugin (ex: vagas) criar uma instância em nome de um fluxo
+// anônimo, com redirectUrl próprio. Ver comentário em features/create-disc-instance/service.ts.
+export { createDiscInstance as createDiscInstanceExternal } from "./features/create-disc-instance/service";
 export { getDiscInstanceBySlugHandler as getDiscInstanceBySlug } from "./features/get-disc-instance-by-slug/handler";
 export { listInstanceReportsHandler as listInstanceReports } from "./features/list-instance-reports/handler";
+// BYPASS de ownership — só pra instância criada via createDiscInstanceExternal. Ver comentário em
+// features/list-instance-reports/service.ts.
+export { listInstanceReportsExternal } from "./features/list-instance-reports/service";
 export { listTeamInstancesHandler as listTeamInstances } from "./features/list-team-instances/handler";
 
 export { DISC_QUESTIONS, DISC_HOWTO, DISC_VALUES, describeDiscProfile } from "./shared/disc-engine/questions";
@@ -24,7 +30,11 @@ export type { ListMyDiscReportsResult, MyDiscReportSummary } from "./features/li
 export type { CreateDiscTeamInput, CreateDiscTeamResult } from "./features/create-disc-team/types";
 export type { GetDiscTeamResult } from "./features/get-disc-team/types";
 export type { ListMyDiscTeamsResult, MyDiscTeamSummary } from "./features/list-my-disc-teams/types";
-export type { CreateDiscInstanceInput, CreateDiscInstanceResult } from "./features/create-disc-instance/types";
+export type {
+  CreateDiscInstanceInput,
+  CreateDiscInstanceCommand,
+  CreateDiscInstanceResult,
+} from "./features/create-disc-instance/types";
 export type { GetDiscInstanceBySlugResult, DiscInstanceInviteView } from "./features/get-disc-instance-by-slug/types";
 export type { ListInstanceReportsResult, InstanceReportSummary } from "./features/list-instance-reports/types";
 export type { ListTeamInstancesResult, TeamInstanceSummary } from "./features/list-team-instances/types";
